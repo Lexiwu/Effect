@@ -1,0 +1,38 @@
+﻿body {
+    .parallux {
+        height: 600px;
+        z-index: 1;
+    }
+
+    .parallux .parallux-bg .parallux-inner .text p {
+        font-size: 22px;
+    }
+
+    .parallux .parallux-bg .parallux-inner.bg-header {
+        background-image: url('../image/image2.png');
+    }
+
+    .wrapper {
+        width: 100%;
+        z-index: 2;
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        transform: translateZ(0);
+    }
+
+    .text{
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin-left:auto;
+        color:white;
+    }
+
+    .separator{
+        max-width:960px;
+        padding:50px;
+        font-size:18px;
+        margin:0 auto;
+        text-align:center;
+    }
+}

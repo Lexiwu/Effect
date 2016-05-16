@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="CSS/chromagallery.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="chroma-gallery mygallery">
+        
+        <img src="images/thumbs/1.jpg" alt="Pic 1" data-largesrc="images/1.jpg"/>
+        <img src="images/thumbs/2.jpg" alt="Pic 2" data-largesrc="images/2.jpg"/>
+        <img src="images/thumbs/3.jpg" alt="Pic 3" data-largesrc="images/3.jpg"/>
+        <img src="images/thumbs/4.jpg" alt="Pic 4" data-largesrc="images/4.jpg"/>
+        <img src="images/thumbs/5.jpg" alt="Pic 5" data-largesrc="images/5.jpg"/>
+        <img src="images/thumbs/6.jpg" alt="Pic 6" data-largesrc="images/6.jpg"/>
+        <img src="images/thumbs/7.jpg" alt="Pic 7" data-largesrc="images/7.jpg"/>
+        <img src="images/thumbs/8.jpg" alt="Pic 8" data-largesrc="images/8.jpg"/>
+        <img src="images/thumbs/9.jpg" alt="Pic 9" data-largesrc="images/9.jpg"/>
+        <img src="images/thumbs/10.jpg" alt="Pic 10" data-largesrc="images/10.jpg"/>
+        <img src="images/thumbs/1.jpg" alt="Pic 1" data-largesrc="images/1.jpg" />
+        <img src="images/thumbs/2.jpg" alt="Pic 2" data-largesrc="images/2.jpg" />
+        <img src="images/thumbs/3.jpg" alt="Pic 3" data-largesrc="images/3.jpg" />
+        <img src="images/thumbs/4.jpg" alt="Pic 4" data-largesrc="images/4.jpg" />
+        <img src="images/thumbs/5.jpg" alt="Pic 5" data-largesrc="images/5.jpg" />
+
+
+    </div>
+
+
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/modernizr-chrg.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+        <script src="js/masonry.min.js"></script>
+        <script src="js/chromagallery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(".mygallery").chromaGallery({
+
+            color: '#000',    //设置图片画廊的背景色。默认值为“chroma”，它使用图片的主导颜色作为背景色
+            gridMargin: 15,  //图片之间的间隔
+            maxColumns: 4,  //网格布局的最大列数
+            dof: true,       //深度背景效果，对性能有影响
+            screenOpacity: 0.8,  //屏幕的透明度，值在0-1之间
+            easing: 'easeInBack'
+        });
+
+
+    </script>      
+</body>
+</html>

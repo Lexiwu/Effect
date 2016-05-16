@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/htmleaf-demo.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    <div id="view">
+        <div id="frame">
+            <div class="op-section">section0</div>
+            <div class="op-section second">section1</div>
+            <div class="op-section third">section2</div>
+            <div class="op-section fourth">section3</div>
+            <div class="op-section fifth">section4</div>
+            <div class="op-section last">section5</div>
+        </div>
+    </div>
+    <!-- 垂直圆点导航按钮 -->
+    <div id="radioWrap">
+        <ul id="radio">
+            <li>section0</li>
+            <li>section1</li>
+            <li>section2</li>
+            <li>section3</li>
+            <li>section4</li>
+            <li>section5</li>
+        </ul>
+        <span id="radioOn"></span>
+    </div>
+
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/onepage.js"></script>
+
+   <script>
+		$(document).ready(function(){
+			startOnePage({
+			    frame: "#view",           //整個單頁布局的div
+			    container: "#frame",      //單頁布局的二级div
+			    sections: ".op-section",  //每個分段的class selector
+			    radio: "#radio",          //垂直原點按紐
+			    radioOn: "#radioOn",      //當前的section的圆點
+			    speed: 500,               //頁面滾動，單位毫秒
+			    easing: "swing"           //頁面滾動效果
+			});
+		});
+	</script>
+</body>
+</html>

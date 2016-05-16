@@ -1,0 +1,61 @@
+﻿@charset "UTF-8";
+body {
+  /* 每個區塊背景顏色*/
+  /*垂直圓點樣式*/
+  /* 
+			代表當前的section的圆點，需要將它设置為absolute，通過margin來調整他們之間的距離
+		*/ }
+  body * {
+    margin: 0;
+    padding: 0; }
+  body body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    /*阻止滾動條的出現*/
+    color: #fff; }
+  body li {
+    list-style-type: none; }
+  body .op-section {
+    background-color: #1abc9c; }
+  body .second {
+    background-color: #3598db; }
+  body .third {
+    background-color: #34495e; }
+  body .fourth {
+    background-color: #2ecc71; }
+  body .fifth {
+    background-color: #8e44ad; }
+  body .last {
+    background-color: #f39c12; }
+  body #radioWrap {
+    width: 20px;
+    height: 180px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    margin-top: -90px; }
+  body #radio {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  body #radio li {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-indent: -10000px;
+    border-radius: 50%;
+    margin-top: 12px;
+    cursor: pointer; }
+  body #radio li:first-child {
+    margin-top: 0; }
+  body #radioOn {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 50%; }
+
